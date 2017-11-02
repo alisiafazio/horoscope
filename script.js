@@ -12,6 +12,7 @@ function onSubmit(){
     var findMonth = document.getElementById("month").value;
     var findDay = document.getElementById("day").value;
     var sign = determineSign(findMonth, findDay);
+    var horoscope = determineHoroscope(sign);
     document.getElementById("sign").innerHTML = sign;
 }
 
@@ -19,7 +20,7 @@ function determineSign(month, day){
     var name = document.getElementById("name").value;
     if(month == 1){
         if(day <= 19){
-            return "Capricorn";
+            return  name + "You are a capricorn! ";
         }
         if(day > 19 && day <= 31){
             return "Aquarius";
@@ -74,5 +75,44 @@ function determineSign(month, day){
             return "Leo";
         }
     }
-
+    if(month == 8){
+        if(day <= 22){
+            return "Leo";
+        }
+        if(day > 22 && day <= 31){
+            return "Virgo";
+        }
+    }
+    if(month == 9){
+        if(day <= 22){
+            return "Virgo";
+        }
+        if(day > 22 && day <= 30){
+            return "Libra";
+        }
+    }
+    if(month == 10){
+        if(day <= 22){
+            return "Libra";
+        }
+        if(day > 22 && day <= 31){
+            return "Scorpio";
+        }
+    }
+    if(month == 11) {
+        if (day <= 21) {
+            return "Scorpio";
+        }
+        if (day > 21 && day <= 30) {
+            return "Sagittarius";
+        }
+    }
+    if(month == 12){
+        if(day <= 21){
+            return "Sagittarius";
+        }
+        if(day > 21 && day <= 31){
+            return "Capricorn";
+        }
+    }
 }
