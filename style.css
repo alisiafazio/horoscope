@@ -1,0 +1,10 @@
+/* style all elements in the <body> */
+body {
+    font-family: sans-serif;
+    vertical-align: top;
+}
+
+/* style all the buttons in a page */
+button {
+    color: cornflowerblue;
+}
