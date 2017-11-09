@@ -237,10 +237,10 @@ function determineSign(month, day) {
 }
 function yourBirthday(month, day) {
     var now = new Date();
-    var todayMonth = now.getMonth();
-    var todayDay = now.getDate();
+    var todaysMonth = now.getMonth();
+    var todaysDay = now.getDate();
 
-    if ((todayMonth + 1) == month && todayDay == day) {
+    if ((todaysMonth + 1) == month && todaysDay == day) {
         return "Happy Birthday!";
     } else {
             return "";
