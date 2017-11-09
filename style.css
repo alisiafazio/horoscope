@@ -1,10 +1,17 @@
-/* style all elements in the <body> */
 body {
-    font-family: sans-serif;
-    vertical-align: top;
+    font-family: Ayuthaya;
+    text-align: center;
+    background-color: lightcyan;
+    font-size: large;
 }
 
-/* style all the buttons in a page */
 button {
+    font-family: Ayuthaya;
+    font-size: large;
     color: cornflowerblue;
+}
+
+
+#myDiv {
+    font-size: 36px;
 }
